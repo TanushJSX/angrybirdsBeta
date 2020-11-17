@@ -45,7 +45,7 @@ function setup(){
 
     log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(bird.body,{x:200, y:50});
-    getTime()  
+     
 }
 
 function draw(){
