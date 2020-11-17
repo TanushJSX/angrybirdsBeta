@@ -12,8 +12,8 @@ var score = 0
 var gameState = "onSling";
 
 function preload() {
-    //backgroundImg = loadImage("sprites/bg.png");
-    getTime()
+    backgroundImg = loadImage("sprites/bg.png");
+    //getTime()
 }
 
 function setup(){
@@ -43,13 +43,13 @@ function setup(){
 
     bird = new Bird(200,50);
 
-    //log6 = new Log(230,180,80, PI/2);
+    log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(bird.body,{x:200, y:50});
     getTime()  
 }
 
 function draw(){
-    if (backgroundImg)    
+    //if (backgroundImg)    
     background(backgroundImg);
     fill("white")
     textSize(35)   
